@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Me"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.501"
+        tools:layout_editor_absoluteX="99dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/ttpic1"
+                />
+
+            <TextView
+                android:id="@+id/usrname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+            <TextView
+
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="User type"
+                android:textColor="@color/darkbrown"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="student"
+                android:textColor="@color/darkbrown"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+            <TextView
+
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/darkbrown"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/eml"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="2425737586@qq.com"
+                android:textColor="@color/darkbrown"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="@color/darkbrown"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:id="@+id/editphone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Edit phone number."
+                    android:onClick="onEditClick"
+                    android:src="@mipmap/edit"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/phonenb"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="19821293202"
+                android:textColor="@color/darkbrown"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/add1"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/darkbrown"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/edit1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Edit intro"
+                    android:onClick="onEditClick"
+                    android:src="@mipmap/edit"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/interestorintro"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Reading, Swimming, Watching movies"
+                android:textColor="@color/darkbrown"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:id="@+id/add2"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkbrown"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/edit2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription="Edit experience"
+                android:onClick="onEditClick"
+                android:src="@mipmap/edit"/>
+        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/educorexp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Shanghai University"
+                android:textColor="@color/darkbrown"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
